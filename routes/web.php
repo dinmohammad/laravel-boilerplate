@@ -14,10 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.layouts.app');
+    return view('frontend.pages.Home.home');
 });
 
 
-Route::get('/about-us', function () {
-    return view('frontend.pages.about');
+Route::get('/team', function () {
+    return view('frontend.pages.Team.team');
 });
+
+Route::get('/advisor', function () {
+    return view('frontend.pages.Advisor.advisor');
+});
+
+Route::get('/faq', function () {
+    return view('frontend.pages.Faq.faq');
+});
+
+Route::get('/contact', function () {
+    return view('frontend.pages.Contact.contact');
+});
+
